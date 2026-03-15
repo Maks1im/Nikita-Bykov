@@ -1,0 +1,17 @@
+@use "./normalize.css";
+@use "./mixins.scss" as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  line-height: 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  @include header();
+}
