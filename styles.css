@@ -19,12 +19,20 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  background:
-    radial-gradient(circle at 12% 8%, #efe9ff 0, transparent 38%),
-    radial-gradient(circle at 88% 2%, #ffe8f3 0, transparent 34%),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
   line-height: 1.65;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 8%, #efe9ff 0, transparent 38%),
+    radial-gradient(circle at 88% 2%, #ffe8f3 0, transparent 34%);
 }
 
 /* Promo bar */
@@ -112,7 +120,7 @@ img {
   gap: 14px;
 }
 
-nav {
+.site-header nav {
   display: flex;
   gap: 4px;
   background: var(--surface-soft);
@@ -121,7 +129,7 @@ nav {
   padding: 5px;
 }
 
-nav a {
+.site-header nav a {
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 0.95rem;
@@ -129,8 +137,8 @@ nav a {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-nav a:hover,
-nav a.active {
+.site-header nav a:hover,
+.site-header nav a.active {
   background: var(--accent-light);
   color: var(--accent-dark);
 }
@@ -826,12 +834,6 @@ main {
   font-size: 1rem;
 }
 
-.footer-note {
-  margin: 0 0 8px;
-  color: var(--muted);
-  font-size: 0.96rem;
-}
-
 .footer-nav {
   display: grid;
   gap: 8px;
@@ -898,12 +900,12 @@ main {
     flex-wrap: wrap;
   }
 
-  nav {
+  .site-header nav {
     flex-direction: column;
     border-radius: 14px;
   }
 
-  nav a {
+  .site-header nav a {
     text-align: center;
   }
 
