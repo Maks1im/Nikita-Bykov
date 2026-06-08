@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мероприятия — Никита Быков</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="promo-bar">
+      <div class="container promo-inner">
+        <span>Свадьбы, выпускные, корпоративы и новогодние праздники</span>
+        <a href="tel:+79199148821">Позвонить</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Никита Быков</a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header-nav">
+          <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О мне</a>
+            <a class="active" href="events.html">Мероприятия</a>
+            <a href="index.html#faq">Вопросы</a>
+          </nav>
+          <a class="phone-link" href="tel:+79199148821">+7 919 914 8821</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="hero-label">Форматы</p>
+          <h1>Мероприятия</h1>
+          <p class="page-hero-text">
+            Выберите интересующий формат, чтобы посмотреть подходящие варианты программы.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="graduation">Выпускные</button>
+            <button class="filter-btn" data-filter="newyear">Новый год</button>
+            <button class="filter-btn" data-filter="wedding">Свадьба</button>
+            <button class="filter-btn" data-filter="corporate">Корпоративы</button>
+          </div>
+
+          <div class="events-grid">
+            <article class="event-card" data-category="graduation">
+              <div class="event-media">
+                <img src="image/graduation.jpg" alt="Выпускной вечер" />
+              </div>
+              <div class="content">
+                <div class="event-tag">Выпускные</div>
+                <h3>Яркий выпускной вечер</h3>
+                <p>
+                  Современный сценарий с интерактивами и юмором, где каждый
+                  выпускник будет чувствовать себя в центре праздника.
+                </p>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="newyear">
+              <div class="event-media">
+                <img src="image/newyear.jpg" alt="Новый год" />
+              </div>
+              <div class="content">
+                <div class="event-tag">Новый год</div>
+                <h3>Новогодняя программа</h3>
+                <p>
+                  Зажигательная атмосфера, интерактивное общение и эффектные
+                  музыкальные вставки от DJ для настоящего праздника.
+                </p>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="wedding">
+              <div class="event-media">
+                <img src="image/wedding.jpg" alt="Свадьба" />
+              </div>
+              <div class="content">
+                <div class="event-tag">Свадьба</div>
+                <h3>Лучшая свадьба</h3>
+                <p>
+                  Индивидуальный подход к паре, тёплое общение с гостями и
+                  продуманная программа без лишнего пафоса.
+                </p>
+              </div>
+            </article>
+
+            <article class="event-card" data-category="corporate">
+              <div class="event-media">
+                <img src="image/corporate.jpg" alt="Корпоратив" />
+              </div>
+              <div class="content">
+                <div class="event-tag">Корпоративы</div>
+                <h3>Корпоратив компании</h3>
+                <p>
+                  Формат под цели команды и бюджет: от лёгкой вечеринки до
+                  масштабного события с вовлечением всех гостей.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="center-actions" style="margin-top: 32px">
+            <a class="btn btn-primary" href="tel:+79199148821">Забронировать дату</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo footer-logo" href="index.html">Никита Быков</a>
+          <p class="footer-note">Ведущий свадеб, выпускных, корпоративов и дней рождения</p>
+        </div>
+        <div>
+          <h3 class="footer-title">Навигация</h3>
+          <nav class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О мне</a>
+            <a href="events.html">Мероприятия</a>
+            <a href="index.html#faq">Вопросы</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer-title">Контакты</h3>
+          <p class="footer-note">Телефон: <a href="tel:+79199148821">+7 919 914 8821</a></p>
+          <p class="footer-note">Для бронирования даты и обсуждения программы — звоните в удобное время.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="floating-call" href="tel:+79199148821" aria-label="Позвонить">Позвонить</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

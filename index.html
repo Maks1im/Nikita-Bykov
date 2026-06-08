@@ -1,23 +1,319 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Никита Быков</title>
-</head>
-<body>
-    <header class="header">
-        <p class="logo">Никита Быков</p>
-        <nav class="navbar">
-            <ul class="navbar-ul">
-                <li><a class="link-underline" href="/">О себе</a></li>
-                <li><a class="link" href="/">Фото</a></li>
-                <li><a class="link" href="/">Контакты</a></li>
-            </ul>
-        </nav>
-        <p class="phone-number">+7 919 914 8821</p>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Никита Быков — ведущий мероприятий</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="promo-bar">
+      <div class="container promo-inner">
+        <span>Забронируйте ведущего на ваш праздник — обсудим программу и подберём формат под бюджет</span>
+        <a href="tel:+79199148821">Позвонить</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Никита Быков</a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header-nav">
+          <nav>
+            <a class="active" href="index.html">Главная</a>
+            <a href="about.html">О мне</a>
+            <a href="events.html">Мероприятия</a>
+            <a href="#faq">Вопросы</a>
+          </nav>
+          <a class="phone-link" href="tel:+79199148821">+7 919 914 8821</a>
+        </div>
+      </div>
     </header>
-</body>
+
+    <main>
+      <section class="hero-banner">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-label">Ведущий мероприятий</p>
+            <h1>
+              Современный праздник<br />
+              с живым общением<br />
+              и яркой программой
+            </h1>
+            <p class="hero-name">Никита Быков</p>
+            <p class="hero-text">
+              Проведу для вас свадьбу, выпускной, корпоратив или день рождения —
+              так, чтобы гости чувствовали себя как дома, а праздник запомнился надолго.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+79199148821">Оставить заявку</a>
+              <a class="btn btn-outline" href="events.html">Смотреть форматы</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-photo-frame">
+              <img src="image/mainPhoto.jpg" alt="Ведущий Никита Быков" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container narrow">
+          <p class="section-kicker">Знакомство</p>
+          <h2 class="section-heading center">Ведущий, который объединяет гостей</h2>
+          <p class="section-lead center">
+            Меня зовут Никита Быков. Я провожу свадьбы, выпускные вечера, корпоративы
+            и дни рождения. Программа строится на интерактивном и юмористическом общении —
+            без пафоса, с вниманием к каждому гостю и вашим идеям.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <p class="section-kicker center">Преимущества</p>
+          <h2 class="section-heading center">На вашем празднике будет</h2>
+          <ul class="benefits-grid">
+            <li class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">✓</span>
+              <p>Интересно и весело — гости вовлечены с первых минут</p>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">✓</span>
+              <p>Индивидуальный сценарий с учётом ваших пожеланий</p>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">✓</span>
+              <p>Современный европейский формат программы</p>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">✓</span>
+              <p>Интерактивы, раскрывающие творческие способности гостей</p>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">✓</span>
+              <p>Музыкальные вставки от DJ и красивая визуальная подача</p>
+            </li>
+            <li class="benefit-item">
+              <span class="benefit-icon" aria-hidden="true">✓</span>
+              <p>Подход к аудитории любого возраста и состава</p>
+            </li>
+          </ul>
+          <div class="center-actions">
+            <a class="btn btn-primary" href="tel:+79199148821">Узнать стоимость</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section">
+        <div class="container">
+          <p class="section-kicker center">Атмосфера</p>
+          <h2 class="section-heading center">Как проходят мероприятия</h2>
+          <p class="section-lead center">
+            Живое общение, эмоции и праздник, который ощущается по-настоящему.
+          </p>
+          <div class="gallery-grid">
+            <img src="image/wedding.jpg" alt="Свадебное мероприятие" />
+            <img src="image/graduation.jpg" alt="Выпускной вечер" />
+            <img src="image/corporate.jpg" alt="Корпоратив" />
+            <img src="image/newyear.jpg" alt="Новогодний праздник" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats-section">
+        <div class="container">
+          <p class="section-kicker center">Опыт</p>
+          <h2 class="section-heading center">Цифры обо мне</h2>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <strong>15</strong>
+              <span>лет в индустрии праздников</span>
+            </article>
+            <article class="stat-card">
+              <strong>4+</strong>
+              <span>формата мероприятий</span>
+            </article>
+            <article class="stat-card">
+              <strong>100%</strong>
+              <span>индивидуальный подход</span>
+            </article>
+          </div>
+          <div class="center-actions">
+            <a class="btn btn-primary" href="tel:+79199148821">Забронировать дату</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="program">
+        <div class="container program-layout">
+          <div>
+            <p class="section-kicker">Программа</p>
+            <h2 class="section-heading">Интерактивный формат</h2>
+            <p class="section-lead">
+              Ведущий становится для гостей «своим» — без навязчивости и шаблонных конкурсов.
+              Программа выстроена так, чтобы каждый чувствовал себя комфортно и участвовал
+              в празднике по желанию.
+            </p>
+            <ul class="program-list">
+              <li>Живое общение и юмор вместо заезженных сценариев</li>
+              <li>Интерактивы с акцентом на творчество и командный дух</li>
+              <li>Музыкальное сопровождение и эффектные вставки от DJ</li>
+              <li>Гибкая программа под ваш бюджет и длительность</li>
+            </ul>
+          </div>
+          <img
+            class="program-photo"
+            src="image/wedding.jpg"
+            alt="Свадебное мероприятие с ведущим"
+          />
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <p class="section-kicker center">Услуги</p>
+          <h2 class="section-heading center">Мои форматы</h2>
+          <p class="section-lead center">
+            Выберите направление — подготовлю программу под ваше событие.
+          </p>
+          <div class="services-grid">
+            <a class="service-card" href="events.html">
+              <img src="image/wedding.jpg" alt="Свадьбы" />
+              <div class="service-body">
+                <h3>Свадьбы</h3>
+                <p>Тёплая атмосфера, вовлечение гостей и продуманный сценарий без лишнего пафоса.</p>
+              </div>
+            </a>
+            <a class="service-card" href="events.html">
+              <img src="image/graduation.jpg" alt="Выпускные" />
+              <div class="service-body">
+                <h3>Выпускные</h3>
+                <p>Яркий вечер для выпускников с современными интерактивами и живой энергией.</p>
+              </div>
+            </a>
+            <a class="service-card" href="events.html">
+              <img src="image/corporate.jpg" alt="Корпоративы" />
+              <div class="service-body">
+                <h3>Корпоративы</h3>
+                <p>Формат под цели команды: от камерного вечера до масштабного праздника.</p>
+              </div>
+            </a>
+            <a class="service-card" href="events.html">
+              <img src="image/newyear.jpg" alt="Новый год и дни рождения" />
+              <div class="service-body">
+                <h3>Новый год и дни рождения</h3>
+                <p>Зажигательная программа с праздничным настроением и вниманием к деталям.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container included-layout">
+          <div>
+            <p class="section-kicker">Состав услуги</p>
+            <h2 class="section-heading">Что входит в работу</h2>
+            <p class="section-lead">
+              Заказывая мои услуги, вы получаете не только ведущего, но и полноценную
+              подготовку праздника от первой встречи до финала вечера.
+            </p>
+          </div>
+          <ol class="included-list">
+            <li>Индивидуальная праздничная программа</li>
+            <li>Обсуждение сценария и всех пожеланий заранее</li>
+            <li>Интерактивный формат с живым общением</li>
+            <li>Помощь в подборе надёжных подрядчиков</li>
+            <li>Варианты программы под ваш бюджет</li>
+            <li>Официальный договор на оказание услуг</li>
+          </ol>
+        </div>
+        <div class="container center-actions">
+          <a class="btn btn-primary" href="tel:+79199148821">Связаться со мной</a>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container narrow">
+          <p class="section-kicker center">FAQ</p>
+          <h2 class="section-heading center">Вопрос — ответ</h2>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>Вы работаете по договору?</summary>
+              <p>Да, работаю официально по договору — это даёт спокойствие обеим сторонам.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Как бронируется дата?</summary>
+              <p>
+                Свяжитесь со мной по телефону, обсудим формат и детали. После согласования
+                фиксируем дату и условия.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Можно ли адаптировать программу под бюджет?</summary>
+              <p>
+                Да, предложу несколько вариантов программы в зависимости от ваших задач,
+                количества гостей и продолжительности мероприятия.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Что нужно от заказчика для подготовки?</summary>
+              <p>
+                Расскажите о формате, пожеланиях и гостях — я подготовлю сценарий и помогу
+                с организационными моментами.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Помогаете с подрядчиками?</summary>
+              <p>
+                Да, при необходимости порекомендую проверенных специалистов: DJ, фотографов
+                и других партнёров.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container cta-inner">
+          <h2>Готовы обсудить ваш праздник?</h2>
+          <p>Оставьте заявку — перезвоню, отвечу на вопросы и предложу программу под ваше событие.</p>
+          <a class="btn btn-light" href="tel:+79199148821">+7 919 914 8821</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo footer-logo" href="index.html">Никита Быков</a>
+          <p class="footer-note">Ведущий свадеб, выпускных, корпоративов и дней рождения</p>
+        </div>
+        <div>
+          <h3 class="footer-title">Навигация</h3>
+          <nav class="footer-nav">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О мне</a>
+            <a href="events.html">Мероприятия</a>
+            <a href="#faq">Вопросы</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer-title">Контакты</h3>
+          <p class="footer-note">Телефон: <a href="tel:+79199148821">+7 919 914 8821</a></p>
+          <p class="footer-note">Для бронирования даты и обсуждения программы — звоните в удобное время.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a class="floating-call" href="tel:+79199148821" aria-label="Позвонить">Позвонить</a>
+
+    <script src="script.js"></script>
+  </body>
 </html>
